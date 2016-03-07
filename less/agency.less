@@ -14,7 +14,7 @@ body {
 
 .text-primary {
 	color: @brand-primary;
-}
+}x
 
 p {
 	font-size: 14px;
@@ -81,16 +81,17 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-default {
-	background-color: @gray-darkest;
+	background-color: white;
 	border-color: transparent;
 	.navbar-brand {
-		color: @brand-primary;
-		.script-font;
+		color: @gray-darkest;
+		font-family: "Proxima Nova", sans-serif;
+		font-weight: bold;
         &:hover,
         &:focus,
         &:active,
         &.active {
-        	color: darken(@brand-primary, 10%);
+        	color: darken(@gray-darkest, 10%);
         }
 	}
 	.navbar-collapse {
@@ -100,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 		background-color: @brand-primary;
 		border-color: @brand-primary;
 		.icon-bar {
-			background-color: white;
+			background-color: @brand-primary;
 		}
 		&:hover,
 		&:focus {
@@ -113,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
     			.heading-font;
     			font-weight: 400;
     			letter-spacing: 1px;
-    			color: white;
+    			color: @gray-darkest;
     			&:hover,
     			&:focus {
     				color: @brand-primary;
@@ -136,8 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-default {
-    	background-color: transparent;
-        padding: 25px 0;
+    	background-color: white;
+        padding: 0px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -153,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
     }
     .navbar-default.navbar-shrink {
-    	background-color: @gray-darkest;
+    	background-color: white;
         padding: 10px 0;
 		.navbar-brand {
 	        font-size: 1.5em;
@@ -162,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
+	background-image: url('../img/header-bg-2.jpg');
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
